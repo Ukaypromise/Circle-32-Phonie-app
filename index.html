@@ -1,19 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Start of Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of Fonts -->
+    <title>Phonie App</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <h2>Heloo</h2>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- App Wrapper -->
+    <main class="app">
+      <!-- Greeting -->
+      <section class="greeting">
+        <h1>Phonie App</h1>
+        <h2 class="title">
+          What's up, <input type="text" id="name" placeholder="Name here" />
+        </h2>
+      </section>
+      <!-- End of Greeting -->
+
+      <!-- App -->
+      <section class="validate-number">
+        <h3>Validate Your Number</h3>
+        <form id="validate-form">
+          <h4>What's is Your Email?</h4>
+          <input
+            type="text"
+            placeholder="e.g. adunola@gmail.com"
+            name="content"
+            id="content-email"
+          />
+
+          <h4>What's is Your Country?</h4>
+          <input
+            type="text"
+            placeholder="e.g. Nigeria"
+            name="content"
+            id="content-country"
+          />
+
+          <h4>What's is Your Phone Number?</h4>
+          <input
+            type="number"
+            placeholder="e.g. 08131234567"
+            name="content"
+            id="content-number"
+          />
+          <input type="submit" value="Validate" />
+        </form>
+      </section>
+      <!-- End App -->
+
+      <!-- Result -->
+      <section class="result">
+        <h4>Your result</h4>
+        <div class="result-item" id="result"></div>
+      </section>
+      <!-- End  -->
+    </main>
+    <!-- End of App Wrapper -->
 
     <!-- // ============= EEND DO NOT EDIT ============== // -->
     <script src="index.mjs" type="module"></script>
     <!-- // ============= EEND DO NOT EDIT ============== // -->
-</body>
+  </body>
 </html>
