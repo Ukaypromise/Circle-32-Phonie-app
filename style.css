@@ -145,6 +145,14 @@ img {
 @media screen and (min-width: 500px) {
   .app {
     margin: 0 auto;
+    width: 70%;
+  }
+}
+
+/* make the app width smaller on screens with minimum width of 800px */
+@media screen and (min-width: 800px) {
+  .app {
+    margin: 0 auto;
     width: 58%;
   }
 }
