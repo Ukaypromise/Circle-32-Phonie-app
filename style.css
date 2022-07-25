@@ -39,7 +39,7 @@ body {
 }
 
 .app {
-  margin: 0 4rem;
+  margin: 0 2rem;
 }
 
 section {
@@ -60,12 +60,12 @@ h3 {
   color: var(--dark);
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 h4 {
   color: var(--grey);
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -87,10 +87,10 @@ h4 {
   font-weight: 700;
 }
 
-.validate-number input[type="text"] {
+.validate-number input[type="text"], .validate-number input[type="number"], select {
   display: block;
   width: 100%;
-  font-size: 1.125rem;
+  font-size: 0.9375rem;
   padding: 1rem 1.5rem;
   color: var(--dark);
   background-color: #fff;
@@ -98,22 +98,21 @@ h4 {
   box-shadow: var(--shadow);
   margin-bottom: 1.5rem;
 }
-.validate-number input[type="number"] {
-  display: block;
-  width: 100%;
-  font-size: 1.125rem;
-  padding: 1rem 1.5rem;
-  color: var(--dark);
-  background-color: #fff;
-  border-radius: 0.5rem;
-  box-shadow: var(--shadow);
-  margin-bottom: 1.5rem;
+
+select {
+  border: none;
 }
+
+select:focus {
+  border: 1px dashed var(--primary);
+}
+ 
 .validate-number input[type="submit"] {
   display: block;
   width: 100%;
   font-size: 1.125rem;
   padding: 1rem 1.5rem;
+  margin-top: 2rem;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
@@ -130,4 +129,21 @@ h4 {
 
 .result .result-item {
   margin: 1rem 0;
+}
+
+logos {
+  display: inline-block; 
+}
+
+img {
+  /* display: none; */
+  padding: 0px 0.3125rem;
+}
+
+/* make the app width smaller om screens with minimum width of 500px */
+@media screen and (min-width: 500px) {
+  .app {
+    margin: 0 auto;
+    width: 50%;
+  }
 }

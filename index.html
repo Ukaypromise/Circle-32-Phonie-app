@@ -32,28 +32,34 @@
       <section class="validate-number">
         <h3>Validate Your Number</h3>
         <form id="validate-form">
-          <h4>What's is Your Email?</h4>
+          <h4>What is Your Email? *</h4>
           <input
             type="text"
             placeholder="e.g. adunola@gmail.com"
             name="content"
-            id="content-email"
+            id="content-email" required
           />
 
-          <h4>What is Your Country?</h4>
+          <h4 for="countries">What is Your Country? *</h4>
+          <select id="countries" name="countries" required>
+            <option disabled selected></option>
+            <option value="nigeria">Nigeria</option>
+            <option value="congo">Congo</option>
+            <option value="namibia">Namibia</option>
+            <option value="uganda">Uganda</option>
+            <option value="south_africa">South Africa</option>
+            <option value="ghana">Ghana</option>
+            <option value="kenya">Kenya</option>
+            <option value="liberia">Liberia</option>
+            <option value="somalia">Somalia</option>
+          </select>
+
+          <h4>What is Your Phone Number? *</h4>
           <input
             type="text"
-            placeholder="e.g. Nigeria"
-            name="content"
-            id="content-country"
-          />
-
-          <h4>What is Your Phone Number?</h4>
-          <input
-            type="number"
             placeholder="e.g. 08131234567"
             name="content"
-            id="content-number"
+            id="content-number" required
           />
           <input type="submit" value="Validate" />
         </form>
@@ -66,6 +72,14 @@
         <div class="result-item" id="result"></div>
       </section>
       <!-- End  -->
+
+      <!-- Network logos-->
+      <section class="logos">
+        <img src="./logos/9mobile Logo.png" alt="9mobile" width="50px" height="35px" />
+        <img src="./logos/Airtel Nigeria Logo.png" alt="Airtel" width="50px" height="35px" />
+        <img src="./logos/Globacom Limited Logo.png" alt="Glo" width="50px" height="38px" />
+        <img src="./logos/MTN Logo.png" alt="MTN" width="50px" height="35px" />
+      </section>
     </main>
     <!-- End of App Wrapper -->
 
