@@ -104,7 +104,8 @@ select {
 }
 
 select:focus {
-  border: 1px dashed var(--primary);
+  border: 1px dashed var(--grey);
+  outline: none;
 }
  
 .validate-number input[type="submit"] {
