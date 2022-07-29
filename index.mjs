@@ -176,6 +176,7 @@ form.addEventListener("submit", (e) => {
   let firstName = firstname.value;
   let phoneNumber = number.value;
 
+  
   getPhoneNumber(phoneNumber, firstName);
   name.innerHTML = firstName;
 });
