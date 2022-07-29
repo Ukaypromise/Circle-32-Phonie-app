@@ -57,13 +57,13 @@ h1 {
 }
 
 h3 {
-  color: var(--dark);
-  font-size: 1rem;
-  font-weight: 400;
+  color: var(--grey);
+  font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
-h4 {
+h4, label{
   color: var(--grey);
   font-size: 1rem;
   font-weight: 700;
@@ -99,6 +99,18 @@ h4 {
   margin-bottom: 1.5rem;
 }
 
+.validate-number input[type="tel"], select {
+  display: block;
+  width: 100%;
+  font-size: 0.9375rem;
+  padding: 1rem 1.5rem;
+  color: var(--dark);
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}
+
 select {
   border: none;
 }
@@ -107,7 +119,7 @@ select:focus {
   outline: none;
 }
  
-.validate-number input[type="submit"] {
+#btn {
   display: block;
   width: 100%;
   font-size: 1.125rem;
@@ -137,7 +149,7 @@ logos {
 
 /* img is set to display none, each logo will appear when JS is added to that effect */
 img {
-  display: none;
+  
   padding: 0px 0.3125rem;
 }
 
@@ -155,4 +167,21 @@ img {
     margin: 0 auto;
     width: 58%;
   }
+}
+
+#image img{
+  width:100px;
+}
+
+#result{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+small{
+  font-size: 1.5rem;
+  color: var(--grey);
+  font-weight: 600;
 }

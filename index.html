@@ -23,7 +23,7 @@
       <section class="greeting">
         <h1>Phonie App</h1>
         <h2 class="title">
-          What's up, <input type="text" id="name" placeholder="Name here" />
+          What's up,  <p id="name"></p>
         </h2>
       </section>
       <!-- End of Greeting -->
@@ -31,13 +31,14 @@
       <!-- App -->
       <section class="validate-number">
         <h3>Validate Your Number</h3>
-        <form id="validate-form">
-          <h4>What is Your Email? *</h4>
+        <form id="validate-form" method="post">
+          <label for="email">What is Your Email? *</label>
           <input
             type="text"
             placeholder="e.g. adunola@gmail.com"
             name="content"
-            id="content-email" required
+            id="content-email"
+            required
           />
 
           <h4 for="countries">What is Your Country? *</h4>
@@ -54,31 +55,66 @@
             <option value="somalia">Somalia</option>
           </select>
 
-          <h4>What is Your Phone Number? *</h4>
+          <label class="label" for="firstname">Firstname:</label>
           <input
+            class="input"
             type="text"
-            placeholder="e.g. 08131234567"
-            name="content"
-            id="content-number" required
+            id="firstname"
+            name="firstname"
+            placeholder="Firstname"
+            required
           />
-          <input type="submit" value="Validate" />
+          
+
+          <label class="label" for="phone_number"
+            >What is Your Phone Number? *</label
+          >
+          <input
+            type="tel"
+            placeholder="e.g. 08131234567"
+            name="phone_number"
+            id="phoneNumber"
+            required
+          />
+          
+
+          <button type="submit" id="btn">Validate</button>
+           <!-- Result -->
+      <section class="result">
+        <h4>Your result</h4>
+        <div class="result-item" id="result">
+          <small></small>
+          <small id="image"></small>
+        </div>
+      </section>
         </form>
       </section>
       <!-- End App -->
 
-      <!-- Result -->
-      <section class="result">
-        <h4>Your result</h4>
-        <div class="result-item" id="result"></div>
-      </section>
+     
       <!-- End  -->
 
       <!-- Network logos-->
       <section class="logos">
-        <img src="./logos/9mobile Logo.png" alt="9mobile" width="50px" height="35px" />
-        <img src="./logos/Airtel Nigeria Logo.png" alt="Airtel" width="50px" height="35px" />
-        <img src="./logos/Globacom Limited Logo.png" alt="Glo" width="50px" height="38px" />
-        <img src="./logos/MTN Logo.png" alt="MTN" width="50px" height="35px" />
+        <img
+          src="./logos/9mobile.png"
+          alt="9mobile"
+          width="50px"
+          height="35px"
+        />
+        <img
+          src="./logos/Airtel.png"
+          alt="Airtel"
+          width="50px"
+          height="35px"
+        />
+        <img
+          src="./logos/Globacom.png"
+          alt="Glo"
+          width="50px"
+          height="38px"
+        />
+        <img src="./logos/MTN.png" alt="MTN" width="50px" height="35px" />
       </section>
       <!-- End -->
     </main>
