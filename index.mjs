@@ -10,7 +10,75 @@ let gloNetwork = ["0805", "0705", "0905", "0807", "0815", "0811"];
 let etisalatNetwork = ["0809", "0909", "0817", "0818", "0908"];
 let airtelNetwork = ["0802", "0902", "0701", "0808", "0708", "0812", "0901", "0907"];
 
+ function errorMessage() {
+    let message = `Opps, please enter a valid phone number`;
+    const msg = document.querySelector("small");
+    msg.innerText = message;
+    return message;
+ }
+
+ function trimNumber234(phoneNumber, firstName) {
+    phoneNumber.trim();
+    if (phoneNumber.length < 14 || phoneNumber.length > 14) {
+        let message = `Opps, please enter a valid phone number`;
+        const msg = document.querySelector("small");
+        msg.innerText = message;
+        return message; 
+    } else {
+        let newNumber = "0" + phoneNumber.slice(4, phoneNumber.length);
+        let testNumber = newNumber.slice(0, 4);
+        
+        mtnNetwork.forEach((num) => {
+            let message = "This is a MTN number";
+            let img = document.createElement("img");
+            img.src = "./logos/MTN.jpg";
+            if (testNumber == num) {
+                const msg = document.querySelector("small");
+                msg.innerText = message;
+                image.appendChild(img);
+                img.classList.add("img");
+            }
+        });
+
+        gloNetwork.forEach((num) => {
+            let message = "This is a glo number";
+            let img = document.createElement("img");
+            img.src = "./logos/Globacom.png";
+            if (testNumber == num) {
+                const msg = document.querySelector("small");
+                msg.innerText = message;
+                image.appendChild(img);
+                img.classList.add("img");
+            }
+        });
+
+        airtelNetwork.forEach((num) => {
+            let message = "This is an Airtel number";
+            let img = document.createElement("img");
+            img.src = "./logos/Airtel.png";
+            if (testNumber == num) {
+                const msg = document.querySelector("small");
+                msg.innerText = message;
+                image.appendChild(img);
+                img.classList.add("img");
+            }
+        });
+    
  
+
+        etisalatNetwork.forEach((num) => {
+            let message = "This is a 9mobile number";
+            let img = document.createElement("img");
+            img.src = "./logos/9mobile.png";
+            if (testNumber == num) {
+                const msg = document.querySelector("small");
+                msg.innerText = message;
+                image.appendChild(img);
+                img.classList.add("img");
+            }
+        });
+    }
+}
 
 function cutNumber(phoneNumber) {
   phoneNumber.trim();
