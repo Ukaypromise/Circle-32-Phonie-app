@@ -134,9 +134,7 @@ logos {
   display: inline-block; 
 }
 
-/* img is set to display none, each logo will appear when JS is added to that effect */
 img {
-  
   padding: 0px 0.3125rem;
 }
 

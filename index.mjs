@@ -91,7 +91,7 @@ function cutNumber(phoneNumber) {
     mtnNetwork.forEach((num) => {
       let message = "MTN number, Everywhere you go!";
       let img = document.createElement("img");
-      img.src = "./logos/MTN.png";
+      img.src = "./logos/MTN.jpg";
       if (testNumber == num) {
         const msg = document.querySelector("small");
 
